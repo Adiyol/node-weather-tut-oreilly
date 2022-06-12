@@ -8,7 +8,7 @@ fetch("https://puzzle.mead.io/puzzle").then((response) => {
   });
 });
 
-fetch("http://localhost:3000/weather?search=%22Philadelphia%22").then(
+fetch("/weather?search=%22Philadelphia%22").then(
   (response) => {
     response.json().then((data) => {
       console.log(data);
